@@ -1,0 +1,1 @@
+The final boss will make u think some buff dude, but than dude leaves and really it is some Part-time middle schooler who is short. This boss will be tough, just like real short middle schoolers it will be a pain in the ass to deal with.
