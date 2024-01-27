@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://ditl0mxbop0xm"]
+
+[ext_resource type="Texture2D" uid="uid://bn87b0dlojue2" path="res://Art/Spirtes/Trevor/Trevor-Sheet.png" id="1_vhb77"]
+
+[sub_resource type="Animation" id="Animation_th7nl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_4grpp"]
+resource_name = "walking"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_liafd"]
+_data = {
+"RESET": SubResource("Animation_th7nl"),
+"walking": SubResource("Animation_4grpp")
+}
+
+[node name="Idle-Walking" type="Sprite2D"]
+position = Vector2(0, -1)
+scale = Vector2(11.773, 11.773)
+texture = ExtResource("1_vhb77")
+hframes = 4
+frame = 1
+
+[node name="Walking" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_liafd")
+}
+autoplay = "walking"
+speed_scale = 1.8

@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://de1jtak4g0rx2"]
+
+[ext_resource type="Script" path="res://scenes/begining.gd" id="1_bvux4"]
+[ext_resource type="Texture2D" uid="uid://bbhgw7tfdgb67" path="res://Art/Backgrounds/Outside/Trollies.jpg" id="1_cdnso"]
+[ext_resource type="Texture2D" uid="uid://cj6k4o3t1t4qi" path="res://Art/Backgrounds/Outside/outside_walmart.png" id="2_0i61e"]
+[ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="4_qqkk8"]
+[ext_resource type="PackedScene" uid="uid://ddh6e84vyej3g" path="res://Events/dialogue.tscn" id="5_6vi1j"]
+
+[node name="begining" type="Node2D"]
+script = ExtResource("1_bvux4")
+
+[node name="Trollies" type="Sprite2D" parent="."]
+position = Vector2(620, 366)
+scale = Vector2(0.217014, 0.190625)
+texture = ExtResource("1_cdnso")
+
+[node name="outside" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(630, 362.75)
+scale = Vector2(2.04902, 1.65193)
+texture = ExtResource("2_0i61e")
+
+[node name="Idle-Walking" parent="." instance=ExtResource("4_qqkk8")]
+position = Vector2(-131, 496)
+
+[node name="Dialogue" parent="Idle-Walking" instance=ExtResource("5_6vi1j")]
+visible = false
+texture_filter = 1
+position = Vector2(29.2194, -19.7061)
+scale = Vector2(0.001, 0.001)
+
+[node name="Timer_trollies" type="Timer" parent="."]
+wait_time = 1.2
+
+[node name="Timer-outside" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="Timer_outside_forgot-keyes" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer_trollies" to="." method="_on_timer_trollies_timeout"]
+[connection signal="timeout" from="Timer-outside" to="." method="_on_timeroutside_timeout"]
+[connection signal="timeout" from="Timer_outside_forgot-keyes" to="." method="_on_timer_outside_forgotkeyes_timeout"]

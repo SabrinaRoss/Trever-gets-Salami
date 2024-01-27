@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddh6e84vyej3g"]
+
+[ext_resource type="Texture2D" uid="uid://mftcmpu81uab" path="res://Art/Objects/Text Bubble.png" id="1_iny0s"]
+[ext_resource type="FontFile" uid="uid://brb5mrvcgi5pc" path="res://Art/Font/Pixelify_Sans/static/PixelifySans-Regular.ttf" id="2_i078e"]
+
+[node name="Dialogue" type="Node2D"]
+
+[node name="Dialogue" type="Sprite2D" parent="."]
+scale = Vector2(934.344, 1165.13)
+texture = ExtResource("1_iny0s")
+
+[node name="Label" type="Label" parent="Dialogue"]
+offset_left = -14.8147
+offset_top = -7.5906
+offset_right = 44.1853
+offset_bottom = 296.409
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_i078e")
+theme_override_font_sizes/font_size = 5
+text = "Forgot my keys"

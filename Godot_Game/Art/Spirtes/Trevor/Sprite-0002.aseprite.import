@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgrufkl562pks"
-path="res://.godot/imported/Trevor.aseprite-326c5ba90ded8f6c53ec60967d27148a.ctex"
+uid="uid://beng5g3hkm36j"
+path="res://.godot/imported/Sprite-0002.aseprite-fb6133c929413a23a7b91800a6795d99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Spirtes/Trevor/Trevor.aseprite"
-dest_files=["res://.godot/imported/Trevor.aseprite-326c5ba90ded8f6c53ec60967d27148a.ctex"]
+source_file="res://Art/Spirtes/Trevor/Sprite-0002.aseprite"
+dest_files=["res://.godot/imported/Sprite-0002.aseprite-fb6133c929413a23a7b91800a6795d99.ctex"]
 
 [params]
 
