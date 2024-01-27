@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpgladgdmwi1i"]
+
+[ext_resource type="Texture2D" uid="uid://3frhatlpc6n6" path="res://Art/Backgrounds/entrance/Grocery_store_background_entrance.png" id="1_um7ts"]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1381.75, 1265.93)
+scale = Vector2(0.681672, 0.827427)
+texture = ExtResource("1_um7ts")
