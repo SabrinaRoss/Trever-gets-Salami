@@ -18,5 +18,13 @@ With 48 hours to create this game, Trevor gets Salami: is about te story of Trev
   he voiced the Mikaill Cow (which is pretty cool)
 
 
-And a Massive thanks to @nathanhood for making the Godot add_on Dialogue Manager becuase that extension is awesome!
+
+
+
+
+
+
+
+
+### And a Massive thanks to @nathanhood for making the Godot add_on Dialogue Manager becuase that extension is awesome!
 
