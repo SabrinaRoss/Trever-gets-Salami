@@ -1,5 +1,6 @@
 extends Node2D
 
+var audio:int = 0
 var start: bool = true
 var start_dialogue: bool = false 
 var start_after: bool = false
@@ -18,6 +19,8 @@ func _ready():
 func _process(delta):
 	starting_up(delta)
 	dialogue_Mikaill_cow(delta)
+	
+	audio_Mikiall()
 func starting_up(delta):
 	if (start):
 		if ($Trevor.position.y > 685):
@@ -106,4 +109,60 @@ func dialogue_Mikaill_cow(delta):
 	#
 	#if (leaving):
 		#pass
+		
+func audio_Mikiall():
+	if (audio != Entrance.audio):
+		match Entrance.audio:
+			1:
+				$"1".play()
+				audio = Entrance.audio
+			2:
+				$"2".play()
+				audio = Entrance.audio
+			3:
+				$"3".play()
+				audio = Entrance.audio
+			4:
+				$"4".play()
+				audio = Entrance.audio
+			5:
+				$"5".play()
+				audio = Entrance.audio
+			6:
+				$"6".play()
+				audio = Entrance.audio
+			7:
+				$"7".play()
+				audio = Entrance.audio
+			8:
+				$"8".play()
+				audio = Entrance.audio
+			9:
+				$"9".play()
+				audio = Entrance.audio
+			10:
+				$"10".play()
+				audio = Entrance.audio
+			11:
+				$"11".play()
+				audio = Entrance.audio
+			12:
+				$"12".play()
+				audio = Entrance.audio
+			13:
+				$"13".play()
+				audio = Entrance.audio
+			14:
+				$"14".play()
+				audio = Entrance.audio
+			15:
+				$"15".play()
+				audio = Entrance.audio
+			16:
+				$"16".play()
+				audio = Entrance.audio
+			17:
+				$"17".play()
+				audio = Entrance.audio
+			
 

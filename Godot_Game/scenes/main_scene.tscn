@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpgladgdmwi1i"]
+[gd_scene load_steps=6 format=3 uid="uid://cpgladgdmwi1i"]
 
 [ext_resource type="Script" path="res://scenes/scene_entrance_start.gd" id="1_ephsx"]
 [ext_resource type="Texture2D" uid="uid://3frhatlpc6n6" path="res://Art/Backgrounds/entrance/Grocery_store_background_entrance.png" id="1_um7ts"]
 [ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="2_kfeul"]
 [ext_resource type="PackedScene" uid="uid://dr1ei16elf0kf" path="res://characters/grocery_store_clerk.tscn" id="4_f013c"]
+[ext_resource type="AudioStream" uid="uid://bdfcpeswlnkay" path="res://Audio/Royalty Free Music/better-day-186374.mp3" id="5_w2ubc"]
 
 [node name="Scene_entrance_start" type="Node2D"]
 script = ExtResource("1_ephsx")
@@ -20,3 +21,8 @@ scale = Vector2(9.75, 9.75)
 [node name="Trevor" parent="." instance=ExtResource("2_kfeul")]
 position = Vector2(593, 818)
 scale = Vector2(10.773, 10.773)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_w2ubc")
+volume_db = -5.082
+autoplay = true

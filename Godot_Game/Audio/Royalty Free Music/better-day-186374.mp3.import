@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdfcpeswlnkay"
+path="res://.godot/imported/better-day-186374.mp3-14b76cde43e13167f96aee075a506a59.mp3str"
+
+[deps]
+
+source_file="res://Audio/Royalty Free Music/better-day-186374.mp3"
+dest_files=["res://.godot/imported/better-day-186374.mp3-14b76cde43e13167f96aee075a506a59.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

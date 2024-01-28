@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ib4u1fcsrl1u"]
+[gd_scene load_steps=8 format=3 uid="uid://ib4u1fcsrl1u"]
 
 [ext_resource type="Script" path="res://Ending.gd" id="1_wf777"]
 [ext_resource type="Texture2D" uid="uid://bbhgw7tfdgb67" path="res://Art/Backgrounds/Outside/Trollies.jpg" id="2_jxyq0"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b1jwfn5f3eeq7" path="res://characters/trevor_dance.tscn" id="4_emk3b"]
 [ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="4_xi0u4"]
 [ext_resource type="Texture2D" uid="uid://vh3fm71i1gos" path="res://Art/Objects/salami_no_bits.png" id="5_uplj8"]
+[ext_resource type="AudioStream" uid="uid://cgu7satsiwfmj" path="res://Audio/Royalty Free Music/the-best-jazz-club-in-new-orleans-164472.mp3" id="7_w4dpi"]
 
 [node name="Ending" type="Node2D"]
 script = ExtResource("1_wf777")
@@ -48,6 +49,11 @@ wait_time = 2.0
 [node name="Timer_outside_forgot-keyes" type="Timer" parent="."]
 
 [node name="Timerdance" type="Timer" parent="."]
-wait_time = 4.0
+wait_time = 8.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_w4dpi")
+volume_db = 5.943
+autoplay = true
 
 [connection signal="timeout" from="Timerdance" to="." method="_on_timerdance_timeout"]

@@ -30,7 +30,7 @@ Trevor: hmmmmmmm
 
 
 ~ Talking_to_Granny
-God: I am god [next=auto]
+God: [wait=.5]I am god [next=auto]
 
 Granny: I mean.... I am a generic granny with a glowing disorder..
 

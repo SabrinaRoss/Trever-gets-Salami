@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://3yviu3q0ubq"]
+[gd_scene load_steps=8 format=3 uid="uid://3yviu3q0ubq"]
 
 [ext_resource type="Script" path="res://scenes/dental_sigma_path_1.gd" id="1_0eml6"]
 [ext_resource type="Texture2D" uid="uid://k1uv5cidk34u" path="res://Art/Backgrounds/dental/dental_background.png" id="1_58i7h"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cbmso0l8m52gi" path="res://characters/granny.tscn" id="4_5yxp8"]
 [ext_resource type="Texture2D" uid="uid://clwu6v3jis85i" path="res://Art/Spirtes/Other_characters/old_lady.aseprite" id="4_ylq78"]
 [ext_resource type="Texture2D" uid="uid://bgkstictdyfdh" path="res://Art/Objects/salami_mostly_done.png" id="6_4wg74"]
+[ext_resource type="AudioStream" uid="uid://bdfcpeswlnkay" path="res://Audio/Royalty Free Music/better-day-186374.mp3" id="7_1e5qo"]
 
 [node name="Dental Sigma Path" type="Node2D"]
 script = ExtResource("1_0eml6")
@@ -34,3 +35,8 @@ scale = Vector2(1.05469, 1)
 texture = ExtResource("6_4wg74")
 
 [node name="TImerSalami" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_1e5qo")
+volume_db = -5.082
+autoplay = true

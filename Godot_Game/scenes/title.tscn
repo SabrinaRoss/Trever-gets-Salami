@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://dubha46nsow4v"]
+
+[ext_resource type="Texture2D" uid="uid://bquyv5uc7yvqf" path="res://Art/Backgrounds/Title/Title.png" id="1_n3pf2"]
+[ext_resource type="Texture2D" uid="uid://bcefgabxbhwnm" path="res://Art/Spirtes/Trevor/Trevor.png" id="2_t82pf"]
+[ext_resource type="Script" path="res://scenes/Control.gd" id="3_a2xdu"]
+[ext_resource type="AudioStream" uid="uid://g3fiupwqq25c" path="res://Audio/Trever Rap.mp3" id="4_rihdi"]
+
+[node name="Title" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(601, 348)
+scale = Vector2(0.9375, 0.975)
+texture = ExtResource("1_n3pf2")
+
+[node name="Trevor" type="Sprite2D" parent="."]
+position = Vector2(216.462, 581.162)
+scale = Vector2(13.6215, 12.4701)
+skew = -0.20944
+texture = ExtResource("2_t82pf")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 616.0
+offset_top = 457.0
+offset_right = 959.0
+offset_bottom = 578.0
+script = ExtResource("3_a2xdu")
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 42.0
+offset_right = 544.0
+offset_bottom = 222.0
+
+[node name="TextEdit" type="TextEdit" parent="Control/ColorRect"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 40.0
+offset_right = 395.0
+offset_bottom = 169.0
+theme_override_colors/background_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Start
+"
+
+[node name="Button" type="Button" parent="Control/ColorRect"]
+layout_mode = 0
+offset_right = 510.0
+offset_bottom = 182.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_rihdi")
+volume_db = 11.016
+pitch_scale = 1.49
+autoplay = true
+
+[connection signal="pressed" from="Control/ColorRect/Button" to="Control" method="_on_button_pressed"]

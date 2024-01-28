@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csyf6kn0r566b"
+path="res://.godot/imported/Mikail_cow_1_LINE_11.mp3-728b9fad9d14071b7695665ce4b6af46.mp3str"
+
+[deps]
+
+source_file="res://Audio/Mikail Cow/Mikail_cow_1_LINE_11.mp3"
+dest_files=["res://.godot/imported/Mikail_cow_1_LINE_11.mp3-728b9fad9d14071b7695665ce4b6af46.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

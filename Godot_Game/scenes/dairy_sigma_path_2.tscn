@@ -1,9 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdog4ovd2611e"]
+[gd_scene load_steps=23 format=3 uid="uid://bdog4ovd2611e"]
 
 [ext_resource type="Script" path="res://scenes/dairy_sigma_path_2.gd" id="1_58in2"]
 [ext_resource type="Texture2D" uid="uid://cn6teu5nfopkb" path="res://Art/Backgrounds/dairy/dairy_background.png" id="1_wtviq"]
 [ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="2_2ddem"]
 [ext_resource type="PackedScene" uid="uid://gv2h7x5ndcl0" path="res://characters/mikail_cow.tscn" id="3_m7fxr"]
+[ext_resource type="AudioStream" uid="uid://clyaxp6fiuijv" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_1.mp3" id="5_080m3"]
+[ext_resource type="AudioStream" uid="uid://cbkvli4y48f7q" path="res://Audio/Mikail Cow/Mikail_cow_1_line_2.mp3" id="6_jlc7g"]
+[ext_resource type="AudioStream" uid="uid://cc52vkluwh8r8" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_3.mp3" id="7_0l4s2"]
+[ext_resource type="AudioStream" uid="uid://bcnsliae4a6np" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_4.mp3" id="8_miige"]
+[ext_resource type="AudioStream" uid="uid://rcebthihmuht" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_5.mp3" id="9_kyypt"]
+[ext_resource type="AudioStream" uid="uid://bce7yv2vvsb1s" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_6.mp3" id="10_44erb"]
+[ext_resource type="AudioStream" uid="uid://coxknkjnvs8u5" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_7.mp3" id="11_vbn2v"]
+[ext_resource type="AudioStream" uid="uid://pbqh7sxctw8v" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_8.mp3" id="12_nv8bd"]
+[ext_resource type="AudioStream" uid="uid://cye7cgowlqj4q" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_9.mp3" id="13_l78u2"]
+[ext_resource type="AudioStream" uid="uid://cqlp8k6a07pa1" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_10.mp3" id="14_6xl8d"]
+[ext_resource type="AudioStream" uid="uid://csyf6kn0r566b" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_11.mp3" id="15_14fb6"]
+[ext_resource type="AudioStream" uid="uid://dfwi6jqds6kiy" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_12.mp3" id="16_j6tlj"]
+[ext_resource type="AudioStream" uid="uid://g0ch0483f8ff" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_13.mp3" id="17_yi2gj"]
+[ext_resource type="AudioStream" uid="uid://ncfhdurdn0i3" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_14.mp3" id="18_4pbof"]
+[ext_resource type="AudioStream" uid="uid://bjk2kqo3vjliu" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_15.mp3" id="19_usqtr"]
+[ext_resource type="AudioStream" uid="uid://rp13ayq6f7ld" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_15_2.mp3" id="20_gml18"]
+[ext_resource type="AudioStream" uid="uid://bthbfsp3u7qm5" path="res://Audio/Mikail Cow/Mikail_cow_1_LINE_16.mp3" id="21_5f44r"]
+[ext_resource type="AudioStream" uid="uid://bdfcpeswlnkay" path="res://Audio/Royalty Free Music/better-day-186374.mp3" id="22_cpuml"]
 
 [node name="Dairy_sigma_path_2" type="Node2D"]
 script = ExtResource("1_58in2")
@@ -21,3 +39,59 @@ scale = Vector2(8, 8)
 position = Vector2(572, 926)
 
 [node name="Mikaill_fall_timer" type="Timer" parent="."]
+
+[node name="1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_080m3")
+
+[node name="2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_jlc7g")
+
+[node name="3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_0l4s2")
+
+[node name="4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_miige")
+
+[node name="5" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_kyypt")
+
+[node name="6" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_44erb")
+
+[node name="7" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_vbn2v")
+
+[node name="8" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_nv8bd")
+
+[node name="9" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_l78u2")
+
+[node name="10" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_6xl8d")
+
+[node name="11" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_14fb6")
+
+[node name="12" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_j6tlj")
+
+[node name="13" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_yi2gj")
+
+[node name="14" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_4pbof")
+
+[node name="15" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_usqtr")
+
+[node name="16" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_gml18")
+
+[node name="17" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_5f44r")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("22_cpuml")
+volume_db = -26.457
+autoplay = true
