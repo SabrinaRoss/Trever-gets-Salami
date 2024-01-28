@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1c44sqsw08o8"]
+
+[ext_resource type="Texture2D" uid="uid://w0s0jorgko0x" path="res://Art/Backgrounds/Outside/Credits.png" id="1_cy7ti"]
+
+[node name="Credits" type="Node2D"]
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(610, 352)
+scale = Vector2(1.18262, 0.923177)
+texture = ExtResource("1_cy7ti")

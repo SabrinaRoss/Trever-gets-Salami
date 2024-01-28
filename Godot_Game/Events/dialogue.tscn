@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://ddh6e84vyej3g"]
+[gd_scene load_steps=4 format=3 uid="uid://ddh6e84vyej3g"]
 
 [ext_resource type="Texture2D" uid="uid://mftcmpu81uab" path="res://Art/Objects/Text Bubble.png" id="1_iny0s"]
+[ext_resource type="Script" path="res://Events/dialogue.gd" id="1_u3tdj"]
 [ext_resource type="FontFile" uid="uid://brb5mrvcgi5pc" path="res://Art/Font/Pixelify_Sans/static/PixelifySans-Regular.ttf" id="2_i078e"]
 
 [node name="Dialogue" type="Node2D"]
+script = ExtResource("1_u3tdj")
 
 [node name="Dialogue" type="Sprite2D" parent="."]
 scale = Vector2(934.344, 1165.13)

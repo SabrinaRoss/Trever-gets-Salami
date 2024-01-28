@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://3yviu3q0ubq"]
+
+[ext_resource type="Script" path="res://scenes/dental_sigma_path_1.gd" id="1_0eml6"]
+[ext_resource type="Texture2D" uid="uid://k1uv5cidk34u" path="res://Art/Backgrounds/dental/dental_background.png" id="1_58i7h"]
+[ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="3_ukgk2"]
+[ext_resource type="PackedScene" uid="uid://cbmso0l8m52gi" path="res://characters/granny.tscn" id="4_5yxp8"]
+[ext_resource type="Texture2D" uid="uid://clwu6v3jis85i" path="res://Art/Spirtes/Other_characters/old_lady.aseprite" id="4_ylq78"]
+[ext_resource type="Texture2D" uid="uid://bgkstictdyfdh" path="res://Art/Objects/salami_mostly_done.png" id="6_4wg74"]
+
+[node name="Dental Sigma Path" type="Node2D"]
+script = ExtResource("1_0eml6")
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.803922, 0.733333, 0.74902, 1)
+position = Vector2(594, 342.5)
+scale = Vector2(1.505, 1.33146)
+texture = ExtResource("1_58i7h")
+
+[node name="Granny" parent="." instance=ExtResource("4_5yxp8")]
+position = Vector2(144, -334)
+scale = Vector2(20, 20)
+
+[node name="PointLight2D" type="PointLight2D" parent="Granny"]
+energy = 0.5
+texture = ExtResource("4_ylq78")
+
+[node name="Trevor" parent="." instance=ExtResource("3_ukgk2")]
+position = Vector2(1123, 706)
+scale = Vector2(8, 8)
+
+[node name="Salami" type="Sprite2D" parent="."]
+position = Vector2(-372.5, 164)
+scale = Vector2(1.05469, 1)
+texture = ExtResource("6_4wg74")
+
+[node name="TImerSalami" type="Timer" parent="."]

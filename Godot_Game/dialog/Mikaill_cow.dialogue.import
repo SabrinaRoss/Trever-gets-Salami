@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://wpnraauc0bcb"
+path="res://.godot/imported/Mikaill_cow.dialogue-00fa4c247c192eb306355333ee31842b.tres"
+
+[deps]
+
+source_file="res://dialog/Mikaill_cow.dialogue"
+dest_files=["res://.godot/imported/Mikaill_cow.dialogue-00fa4c247c192eb306355333ee31842b.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dibxjmc38h4er"]
+
+[ext_resource type="Texture2D" uid="uid://coqm7fdnve4d3" path="res://Art/Backgrounds/protein/protein_power_background.png" id="1_kmx76"]
+[ext_resource type="Script" path="res://scenes/protein_scene.gd" id="1_vgknx"]
+[ext_resource type="PackedScene" uid="uid://cu7yys05r8ppf" path="res://characters/gym_bro.tscn" id="2_b0tql"]
+[ext_resource type="Texture2D" uid="uid://smmc2ldokhkr" path="res://Art/Spirtes/Other_characters/lanky_gym_bro.aseprite" id="3_yqpv7"]
+[ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="5_j52pp"]
+
+[node name="Protein scene" type="Node2D"]
+modulate = Color(0.682353, 0.682353, 0.682353, 1)
+script = ExtResource("1_vgknx")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(600.5, 349.25)
+scale = Vector2(1.209, 1.06072)
+texture = ExtResource("1_kmx76")
+
+[node name="Gym Bro" parent="." instance=ExtResource("2_b0tql")]
+position = Vector2(556, 77)
+scale = Vector2(8, 8)
+skew = -0.179769
+
+[node name="PointLight2D" type="PointLight2D" parent="Gym Bro"]
+energy = 0.3
+texture = ExtResource("3_yqpv7")
+
+[node name="Trevor" parent="." instance=ExtResource("5_j52pp")]
+position = Vector2(-101, 808)
+skew = -0.20944

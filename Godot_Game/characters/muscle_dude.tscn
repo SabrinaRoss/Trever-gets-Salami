@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://cu7t6c6p788of"]
+
+[ext_resource type="Texture2D" uid="uid://5focbiji60dl" path="res://Art/Spirtes/Other_characters/Muscle_dude.png" id="1_4p2w4"]
+
+[sub_resource type="Animation" id="Animation_d2i2t"]
+resource_name = "Muscle Dude"
+length = 0.55
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_e6yie"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_na2yq"]
+_data = {
+"Muscle Dude": SubResource("Animation_d2i2t"),
+"RESET": SubResource("Animation_e6yie")
+}
+
+[node name="Muscle Dude" type="Node2D"]
+
+[node name="Muscle Dude" type="Sprite2D" parent="."]
+scale = Vector2(18, 19.935)
+texture = ExtResource("1_4p2w4")
+hframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Muscle Dude"]
+libraries = {
+"": SubResource("AnimationLibrary_na2yq")
+}
+autoplay = "Muscle Dude"

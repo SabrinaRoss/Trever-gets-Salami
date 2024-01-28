@@ -1,0 +1,104 @@
+~ Talking_to_Clerk
+
+Greeter: Howdy bro welcome to NOT wal.... [next=auto]
+
+Trevor: [speed=10] GIVE ME SALAMI!
+
+Greeter: Ahh salami, young customer salami is quite hard to get, and we only have limited supply. \n[wait=.5] 
+Greeter: You see in our feeble economy, Salami has become quite the delicousy, everybody wants it.
+Greeter: One must prove themselves in order to... [next=auto, wait=.5]
+
+Trevor: I don't care, give me Salami!
+
+Greeter: I... [next=auto, wait=.5]
+
+Trevor: Salami now
+
+Greeter: Fine, the two fastest ways to get Salami are either \n 1. International Foods \n 2. Snackies 
+
+~ option_clerk
+Trevor: hmmmmmmm
+- International Foods Aisle
+	Trevor's thoughts: wait, I'm alergic to Vegemite
+	=> option_clerk
+- Snackies Aisle
+	Trevor's thoughts: My mental strength is not strong enough to go there
+	=> option_clerk
+- Sigma
+	do Entrance.sigma_selected = true
+=> END
+
+
+~ Talking_to_Granny
+God: I am god [next=auto]
+
+Granny: I mean.... I am a generic granny with a glowing disorder..
+
+Trever: A granny sweet!
+Trevor: Hey Granny, give me Salami
+
+Granny: No
+Granny: Instead.
+Granny: What if you could have 3 wishes?
+
+Trevor: Damn it! 
+
+Granny: With these 3 wishes, you can wish for anything you could ever dream off
+Granny: Money
+Granny: A country
+Granmy: Cheese
+Granny: A girlfriend
+Granny: Or even, why you have a uncanny resemblance to good old mailman John?
+
+Trevor: Salami.
+Trevor: I wish for Salami!
+
+Granny: Darn did not think of that.
+Granny: Oversight on my part.
+Granny: Here.
+do Entrance.give_salami_first = true
+Trevor's thoughts: I stare at the Salami....
+Trevor: ew!
+Trevor: It has bits in it!
+do Entrance.give_salami_first = false
+[wait=5.0]
+Trevor: Goodbye
+
+do Entrance.sigma_selected = true
+[wait=1.0]
+[next=auto]
+
+=> END
+
+
+~ Butcher
+
+Trevor: A kid?
+
+Butcher: What is up no cap! Skibbibi these Meats u want?
+
+Trevor's thoughts: Forget the Mikaill Cow, This is my real worst nightmare.....
+Trevor's thoughts: A middle schooler....
+
+Trevor: Salami now!
+
+Butcher: "Salami now!"
+
+Trevor: I want Salami!
+
+Butcher: "I want Salami!"
+
+Trevor's thoughts:  Middle schoolers...........
+
+Butcher: We only have limited supply.
+
+Trevor's thoughts: No you do not, the developer of this game is tired after working for 18 hours straight scripting this shit, and still has to do assignments tommorrow so that he does not get behind in his Calculus, not to mention 2 unrelated midterm. So do me a favour kid and hand over the Salami for the Developers sake.
+
+Butcher: nah
+
+Trevor: Fine.
+Trevor: cut the scene....
+Sabrina Ross: I still need to follow GGJ terms and services.....
+
+do Entrance.sigma_selected = true
+=> END

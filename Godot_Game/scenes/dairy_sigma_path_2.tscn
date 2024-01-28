@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdog4ovd2611e"]
+
+[ext_resource type="Script" path="res://scenes/dairy_sigma_path_2.gd" id="1_58in2"]
+[ext_resource type="Texture2D" uid="uid://cn6teu5nfopkb" path="res://Art/Backgrounds/dairy/dairy_background.png" id="1_wtviq"]
+[ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="2_2ddem"]
+[ext_resource type="PackedScene" uid="uid://gv2h7x5ndcl0" path="res://characters/mikail_cow.tscn" id="3_m7fxr"]
+
+[node name="Dairy_sigma_path_2" type="Node2D"]
+script = ExtResource("1_58in2")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(605, 352.25)
+scale = Vector2(1.30064, 1.3463)
+texture = ExtResource("1_wtviq")
+
+[node name="Mikail_Cow" parent="." instance=ExtResource("3_m7fxr")]
+position = Vector2(200, 367)
+scale = Vector2(8, 8)
+
+[node name="Trevor" parent="." instance=ExtResource("2_2ddem")]
+position = Vector2(572, 926)
+
+[node name="Mikaill_fall_timer" type="Timer" parent="."]

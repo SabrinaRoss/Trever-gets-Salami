@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cjmcs0kryelur"
+path="res://.godot/imported/conversation.dialogue-2beb6786bab1aaac7147d26a9540d894.tres"
+
+[deps]
+
+source_file="res://dialog/conversation.dialogue"
+dest_files=["res://.godot/imported/conversation.dialogue-2beb6786bab1aaac7147d26a9540d894.tres"]
+
+[params]
+
+defaults=true

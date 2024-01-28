@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://ib4u1fcsrl1u"]
+
+[ext_resource type="Script" path="res://Ending.gd" id="1_wf777"]
+[ext_resource type="Texture2D" uid="uid://bbhgw7tfdgb67" path="res://Art/Backgrounds/Outside/Trollies.jpg" id="2_jxyq0"]
+[ext_resource type="Texture2D" uid="uid://cj6k4o3t1t4qi" path="res://Art/Backgrounds/Outside/outside_walmart.png" id="3_qloy8"]
+[ext_resource type="PackedScene" uid="uid://b1jwfn5f3eeq7" path="res://characters/trevor_dance.tscn" id="4_emk3b"]
+[ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="4_xi0u4"]
+[ext_resource type="Texture2D" uid="uid://vh3fm71i1gos" path="res://Art/Objects/salami_no_bits.png" id="5_uplj8"]
+
+[node name="Ending" type="Node2D"]
+script = ExtResource("1_wf777")
+
+[node name="Trollies" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(620, 366)
+scale = Vector2(0.217014, 0.190625)
+texture = ExtResource("2_jxyq0")
+
+[node name="outside" type="Sprite2D" parent="."]
+position = Vector2(630, 362.75)
+scale = Vector2(2.04902, 1.65193)
+texture = ExtResource("3_qloy8")
+
+[node name="Trevor_dance" parent="." instance=ExtResource("4_emk3b")]
+visible = false
+position = Vector2(1280, 756)
+
+[node name="Salami" type="Sprite2D" parent="Trevor_dance"]
+position = Vector2(8, 5.99999)
+scale = Vector2(0.183594, 0.125)
+texture = ExtResource("5_uplj8")
+
+[node name="Idle-Walking" parent="." instance=ExtResource("4_xi0u4")]
+position = Vector2(640, 378)
+scale = Vector2(1, 1)
+
+[node name="Salami" type="Sprite2D" parent="Idle-Walking"]
+position = Vector2(8, 5.99999)
+scale = Vector2(0.183594, 0.125)
+texture = ExtResource("5_uplj8")
+
+[node name="Timer_trollies" type="Timer" parent="."]
+wait_time = 1.2
+
+[node name="Timer-outside" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="Timer_outside_forgot-keyes" type="Timer" parent="."]
+
+[node name="Timerdance" type="Timer" parent="."]
+wait_time = 4.0
+
+[connection signal="timeout" from="Timerdance" to="." method="_on_timerdance_timeout"]

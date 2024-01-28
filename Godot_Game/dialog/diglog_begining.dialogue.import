@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://525us6a840ua"
+path="res://.godot/imported/diglog_begining.dialogue-dae659f880182ec56448ee7ae3063190.tres"
+
+[deps]
+
+source_file="res://dialog/diglog_begining.dialogue"
+dest_files=["res://.godot/imported/diglog_begining.dialogue-dae659f880182ec56448ee7ae3063190.tres"]
+
+[params]
+
+defaults=true

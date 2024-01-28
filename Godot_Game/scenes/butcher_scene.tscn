@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://du2mi3pnqqlie"]
+
+[ext_resource type="Texture2D" uid="uid://r1qxqh0k8bq2" path="res://Art/Backgrounds/butcher/butcher.png" id="1_gdumh"]
+[ext_resource type="Script" path="res://scenes/butcher_scene.gd" id="1_o21px"]
+[ext_resource type="PackedScene" uid="uid://fqp6x1of776f" path="res://characters/butcher.tscn" id="2_0s5q5"]
+[ext_resource type="PackedScene" uid="uid://ditl0mxbop0xm" path="res://characters/trevor.tscn" id="3_v7p5s"]
+[ext_resource type="Texture2D" uid="uid://5focbiji60dl" path="res://Art/Spirtes/Other_characters/Muscle_dude.png" id="4_gqibu"]
+[ext_resource type="PackedScene" uid="uid://cu7t6c6p788of" path="res://characters/muscle_dude.tscn" id="4_l2cus"]
+[ext_resource type="Texture2D" uid="uid://dqu723t7i1vrt" path="res://Art/Backgrounds/Outside/Very_Black_screen.png" id="7_j5huc"]
+
+[node name="Butcher_scene" type="Node2D"]
+script = ExtResource("1_o21px")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(600.5, 353.25)
+scale = Vector2(1.99508, 2.13582)
+texture = ExtResource("1_gdumh")
+
+[node name="Butcher" parent="." instance=ExtResource("2_0s5q5")]
+position = Vector2(981, 413)
+scale = Vector2(7, 7)
+
+[node name="Trevor" parent="." instance=ExtResource("3_v7p5s")]
+texture_filter = 1
+position = Vector2(-22.9999, 895)
+skew = 0.0296706
+
+[node name="Muscle Dude" parent="." instance=ExtResource("4_l2cus")]
+position = Vector2(975, 268)
+skew = 0.0296706
+
+[node name="PointLight2D" type="PointLight2D" parent="Muscle Dude"]
+visible = false
+position = Vector2(-172.824, 107.047)
+scale = Vector2(1, 1.78181)
+energy = 10.0
+texture = ExtResource("4_gqibu")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Muscle Dude"]
+visible = false
+position = Vector2(178.929, 65.0286)
+energy = 10.0
+texture = ExtResource("4_gqibu")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="Black Screen" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(726, 337)
+scale = Vector2(1.5459, 1.34766)
+texture = ExtResource("7_j5huc")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

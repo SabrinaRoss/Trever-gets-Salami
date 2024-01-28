@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://dr1ei16elf0kf"]
+
+[ext_resource type="Texture2D" uid="uid://bjqttuv12ij6l" path="res://Art/Spirtes/Other_characters/Not_Grocery Store cash person-Sheet.png" id="1_ockgo"]
+
+[sub_resource type="Animation" id="Animation_1gua1"]
+resource_name = "Grocery movement"
+length = 1.05
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 2]
+}
+
+[sub_resource type="Animation" id="Animation_n1fkf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4aldl"]
+_data = {
+"Grocery movement": SubResource("Animation_1gua1"),
+"RESET": SubResource("Animation_n1fkf")
+}
+
+[node name="Grocery Store Clerk" type="Sprite2D"]
+texture = ExtResource("1_ockgo")
+hframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4aldl")
+}
+autoplay = "Grocery movement"
