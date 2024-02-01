@@ -17,6 +17,9 @@ With 48 hours to create this game, Trevor gets Salami: is about te story of Trev
 ## mrcantelope (Mikaill):
   he voiced the Mikaill Cow (which is pretty cool)
 
+## luwupe (Luiz):
+  he voiced the Granny
+
 
 
 
