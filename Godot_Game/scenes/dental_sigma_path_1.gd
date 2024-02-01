@@ -1,6 +1,6 @@
 extends Node2D
 
-
+var audio:int = 0
 var dab: bool = false
 var start: bool = true
 var start_after: bool = false
@@ -16,7 +16,7 @@ func _ready():
 	$Granny/PointLight2D.energy = 0
 func _process(delta):
 	starting_up(delta)
-
+	audio_Grannyl()
 func starting_up(delta):
 	if (start):
 		if ($Trevor.position.x > 450 && $Trevor.position.y > 400):
@@ -79,3 +79,39 @@ func starting_up(delta):
 			#$Trevor.position.x -= (30 * delta)
 		#else:
 			#Entrance.sigma_selected = false
+func audio_Grannyl():
+	if (audio != Entrance.audio):
+		match Entrance.audio:
+			1:
+				$"1".play()
+				audio = Entrance.audio
+			2:
+				$"2".play()
+				audio = Entrance.audio
+			3:
+				$wish_0.play()
+				audio = Entrance.audio
+			4:
+				$wish_1.play()
+				audio = Entrance.audio
+			5:
+				$wish_2.play()
+				audio = Entrance.audio
+			6:
+				$wish_3.play()
+				audio = Entrance.audio
+			7:
+				$wish_4.play()
+				audio = Entrance.audio
+			8:
+				$wish_5.play()
+				audio = Entrance.audio
+			9:
+				$after_wish_0.play()
+				audio = Entrance.audio
+			10:
+				$after_wish_1.play()
+				audio = Entrance.audio
+			11:
+				$after_wish_2.play()
+				audio = Entrance.audio

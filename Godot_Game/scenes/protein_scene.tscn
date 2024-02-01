@@ -31,4 +31,5 @@ skew = -0.20944
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_115ln")
+volume_db = 24.0
 autoplay = true

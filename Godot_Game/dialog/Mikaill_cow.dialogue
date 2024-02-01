@@ -1,22 +1,19 @@
 ~ Mikaill_convo
 
 
-?????: [do Entrance.audio += 1]Moo! Moo!
+?????: [do Entrance.audio += 1]Moo! Moo! [wait=0.5]I am here to stop u.[wait=0.5]\nMoooo!
 
-?????: I am here to stop u.
 
-?????: Moooo!
-
-?????: [do Entrance.audio += 1]I am the Mikaill Cow \n Here to eat yoooooouuuuu
+?????: [do Entrance.audio += 1]I am the Mikaill Cow \nHere to eat yoooooouuuuu
 
 Trevor: O no!!!! 
 
 Trevor: My Worst Enemy!
 
 
-?????: [do Entrance.audio += 1]That is right, \n I eat grass and milk cause I am not just any cow.
+?????: [do Entrance.audio += 1]That is right, \n I eat grass and milk, cause I am not just any cow.
 
-Mikaill Cow: [do Entrance.audio += 1]I am a Mikaill Cow!
+Mikaill Cow: [do Entrance.audio += 1]I am a Mikaill Cow! [wait=2](filtered retaliation from Mikaill)
 
 Trevor: Mooooooo!
 
@@ -28,13 +25,13 @@ Mikaill Cow: [do Entrance.audio += 1]To pass you must beat me in a Math Battle!
 Trevor: what?????
 
 
-Mikaill Cow: [do Entrance.audio += 1]Everyone knows that the only way to beat beef is to use Algrebra to rationlise our issues.
+Mikaill Cow: [do Entrance.audio += 1]Everyone knows that the only way to beat beef is to use Algrebra to rationlise our issues. [wait=5.5]\n(Mikail speaking gibberish)
 
 Trevor: Some Salami can be made out of Beef!! 
 Trevor: Let's Battle!!
 
 
-Mikaill Cow: [do Entrance.audio += 1]Question 1
+Mikaill Cow: [do Entrance.audio += 1]Right on, mooo!
 
 Mikaill Cow: [do Entrance.audio += 1]What is 1 + 1?
 
@@ -44,9 +41,7 @@ Mikaill Cow: [do Entrance.audio += 1]What is 1 + 1?
 - 3. moooo
 
 
-Mikaill Cow: [do Entrance.audio += 1]Correct!!
-
-Mikaill Cow: They are all right!! Mooooo!!
+Mikaill Cow: [do Entrance.audio += 1]Correct!! [wait=.5] They are all right!!
 
 
 Trevor: Yay!
@@ -57,24 +52,18 @@ Mikaill Cow: [do Entrance.audio += 1]Next Question: Do you eat grass Backwards o
 
 - 1. Backwards
 	
-	Mikaill Cow: [do Entrance.audio = 12]Correct!
-	
-	Mikaill Cow: the Answer is Backwards, if not Backwards what else?
-	
+	Mikaill Cow: [do Entrance.audio = 12]Correct!\nthe Answer is Backwards, if not Backwards what else?
+
 	Trevor: Haha, common knowledge
 
 - 2. Forwards
 	
-	Mikaill Cow: [do Entrance.audio = 14]Wrong! [wait=1.5] geez I thought every human know,\n wow ur stupid
-	
-	Mikaill Cow: Out of pity u get this answer right.
-	
-	Mikaill Cow: Us cows are generous creatures.
+	Mikaill Cow: [do Entrance.audio = 14]Wow you're stupid[wait=1.3]\nOut of pity u get this answer right. [wait=1]Us cows are generous creatures.
 	Trevor: Damn that is common knowledge! 
 	Trevor: Thanks... I do not know how I got that one wrong!?!?!?
 
 
-Mikaill Cow: [do Entrance.audio = 15]Last [wait=1]question,
+Mikaill Cow: [do Entrance.audio = 15](more uncivalised speach from the[wait=0.5] Mikaill cow)[wait=1]Last [wait=1]question,
 
 Mikaill Cow: [do Entrance.audio += 1]Intergrate: (arccos(x)(sqrt((1-x^2))^-1)/(log_e(sin(2xsqrt(1-x^2))/pi)))dx
 
@@ -84,21 +73,18 @@ Mikaill Cow: [do Entrance.audio += 1]Intergrate: (arccos(x)(sqrt((1-x^2))^-1)/(l
 - 2. 2.71828
 	Mikaill Cow: Correct! You fucking nerd!
 - 3. I don't know, I'm not a nerd.
-	Mikaill Cow: Correct! 
 	
-	Mikaill Cow: [do Entrance.audio += 1]if u answerd that right I would have called u a nerd and killed u
+	Mikaill Cow: [do Entrance.audio += 1]Contrats! [wait=0.5]if u answerd that right I would have called u a nerd.....[wait=1] and killed u
 	
 
 Trevor: Easy!
 
-Mikaill Cow: [do Entrance.audio = 17]You Pass.
-
-Mikaill Cow: Now leave before I decide to no longer (moo)ve over.
+Mikaill Cow: [do Entrance.audio = 18]You Pass. [wait=0.5]Now leave before I decide to no longer (moo)ve over.
 do Entrance.sigma_selected = true
 
 => END
 
 ~ gym
-Trevor: S[wait=.25]A[wait=.25]L[wait=.25]A[wait=.25]M[wait=.25]I[wait=.25]![wait=.25]![wait=.25]! [next=auto]
+Trevor: S[wait=0.25]A[wait=0.25]L[wait=0.25]A[wait=0.25]M[wait=0.25]I[wait=0.25]![wait=0.25]![wait=0.25]! [next=auto]
 do Entrance.sigma_selected = true
 => END

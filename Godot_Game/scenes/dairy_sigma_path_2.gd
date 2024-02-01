@@ -164,5 +164,10 @@ func audio_Mikiall():
 			17:
 				$"17".play()
 				audio = Entrance.audio
+			18:
+				$"18".play()
+				audio = Entrance.audio
+				
+				
 			
 

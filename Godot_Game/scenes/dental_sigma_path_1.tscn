@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://3yviu3q0ubq"]
+[gd_scene load_steps=19 format=3 uid="uid://3yviu3q0ubq"]
 
 [ext_resource type="Script" path="res://scenes/dental_sigma_path_1.gd" id="1_0eml6"]
 [ext_resource type="Texture2D" uid="uid://k1uv5cidk34u" path="res://Art/Backgrounds/dental/dental_background.png" id="1_58i7h"]
@@ -7,6 +7,17 @@
 [ext_resource type="Texture2D" uid="uid://clwu6v3jis85i" path="res://Art/Spirtes/Other_characters/old_lady.aseprite" id="4_ylq78"]
 [ext_resource type="Texture2D" uid="uid://bgkstictdyfdh" path="res://Art/Objects/salami_mostly_done.png" id="6_4wg74"]
 [ext_resource type="AudioStream" uid="uid://bdfcpeswlnkay" path="res://Audio/Royalty Free Music/better-day-186374.mp3" id="7_1e5qo"]
+[ext_resource type="AudioStream" uid="uid://cupvjmlhsr5qc" path="res://Audio/Granny/a01.mp3" id="8_vjte1"]
+[ext_resource type="AudioStream" uid="uid://dmuk4okwvlacg" path="res://Audio/Granny/a02.mp3" id="9_dyn5h"]
+[ext_resource type="AudioStream" uid="uid://cgi8mix2vkemx" path="res://Audio/Granny/Granny_wish_0.mp3" id="10_nxsl7"]
+[ext_resource type="AudioStream" uid="uid://3u6qa76fp750" path="res://Audio/Granny/wish_1.mp3" id="11_m1joh"]
+[ext_resource type="AudioStream" uid="uid://c3lf25tgexbdu" path="res://Audio/Granny/wish_2.mp3" id="12_v14ee"]
+[ext_resource type="AudioStream" uid="uid://bnf8cpqo8pe47" path="res://Audio/Granny/wish_3.mp3" id="13_g5kf4"]
+[ext_resource type="AudioStream" uid="uid://cj5jpr336rd5m" path="res://Audio/Granny/wish_4.mp3" id="14_q0fjk"]
+[ext_resource type="AudioStream" uid="uid://dpj7rclfbs2fc" path="res://Audio/Granny/wish_5.mp3" id="15_brg08"]
+[ext_resource type="AudioStream" uid="uid://0j8f36kmm5rh" path="res://Audio/Granny/after_wish_1.mp3" id="16_ii31d"]
+[ext_resource type="AudioStream" uid="uid://c4oqn4bbkupvo" path="res://Audio/Granny/after_wish_2.mp3" id="17_j5axo"]
+[ext_resource type="AudioStream" uid="uid://bgrk30mrppb4" path="res://Audio/Granny/after_wish_3.mp3" id="18_u60ro"]
 
 [node name="Dental Sigma Path" type="Node2D"]
 script = ExtResource("1_0eml6")
@@ -36,7 +47,51 @@ texture = ExtResource("6_4wg74")
 
 [node name="TImerSalami" type="Timer" parent="."]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_1e5qo")
-volume_db = -5.082
+volume_db = -15.0
 autoplay = true
+
+[node name="1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_vjte1")
+volume_db = 24.0
+
+[node name="2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_dyn5h")
+volume_db = 24.0
+
+[node name="wish_0" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_nxsl7")
+volume_db = 24.0
+
+[node name="wish_1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_m1joh")
+volume_db = 24.0
+
+[node name="wish_2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_v14ee")
+volume_db = 24.0
+
+[node name="wish_3" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_g5kf4")
+volume_db = 24.0
+
+[node name="wish_4" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_q0fjk")
+volume_db = 24.0
+
+[node name="wish_5" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_brg08")
+volume_db = 24.0
+
+[node name="after_wish_0" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_ii31d")
+volume_db = 24.0
+
+[node name="after_wish_1" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_j5axo")
+volume_db = 24.0
+
+[node name="after_wish_2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_u60ro")
+volume_db = 24.0

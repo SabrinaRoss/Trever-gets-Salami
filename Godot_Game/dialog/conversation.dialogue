@@ -30,40 +30,41 @@ Trevor: hmmmmmmm
 
 
 ~ Talking_to_Granny
-God: [wait=.5]I am god [next=auto]
+God: [do Entrance.audio += 1][wait=0.5]I am god [next=auto]
 
-Granny: I mean.... I am a generic granny with a glowing disorder..
+Granny: [wait=1][do Entrance.audio += 1]I mean... I am a generic granny with a glowing disorder..
 
 Trever: A granny sweet!
 Trevor: Hey Granny, give me Salami
 
 Granny: No
-Granny: Instead.
-Granny: What if you could have 3 wishes?
 
 Trevor: Damn it! 
 
-Granny: With these 3 wishes, you can wish for anything you could ever dream off
-Granny: Money
-Granny: A country
-Granmy: Cheese
-Granny: A girlfriend
-Granny: Or even, why you have a uncanny resemblance to good old mailman John?
+Granny: Instead.
+Granny: What if you could have 3 wishes?
+
+Granny: [do Entrance.audio += 1]With these 3 wishes, you can wish for anything you could ever dream off
+Granny: [do Entrance.audio += 1]Money
+Granny: [do Entrance.audio += 1]A country
+Granmy: [do Entrance.audio += 1]Cheese
+Granny: [do Entrance.audio += 1]A girlfriend
+Granny: [do Entrance.audio += 1]Or even, why you have a uncanny resemblance to good old mailman John?
 
 Trevor: Salami.
 Trevor: I wish for Salami!
 
-Granny: Darn did not think of that.
-Granny: Oversight on my part.
-Granny: Here.
+Granny: [do Entrance.audio += 1]Darn, I did not think of that.
+Granny: [do Entrance.audio += 1]Oversight on my part.
+Granny: [do Entrance.audio += 1]Here.
 do Entrance.give_salami_first = true
 Trevor's thoughts: I stare at the Salami....
 Trevor: ew!
 Trevor: It has bits in it!
 do Entrance.give_salami_first = false
-[wait=5.0]
+[wait=0.5]
 Trevor: Goodbye
-
+ do Entrance.audio = 0
 do Entrance.sigma_selected = true
 [wait=1.0]
 [next=auto]
