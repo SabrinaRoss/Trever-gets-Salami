@@ -6,9 +6,9 @@ With 48 hours to create this game, Trevor gets Salami: is about te story of Trev
 ## Credits
 
 ### Sabrina_Ross (Rowan):
-  Programming
-  Artist
-  Some sounds
+  Programming,
+  Artist,
+  Some sounds,
   Rapping
 
 ## Phizy (Andy):
